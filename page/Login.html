@@ -1,0 +1,50 @@
+<!--
+ * @Description: 
+ * @Author: cw
+ * @LastEditors: cw
+ * @Date: 2019-04-08 09:53:16
+ * @LastEditTime: 2019-04-24 16:40:48
+ -->
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+    <script src="./lib/jquery.min.js"></script>    
+    <link rel="stylesheet" type="text/css" href="./lib/w2ui-1.5.rc1.min.css" />
+    <script type="text/javascript" src="./lib/w2ui-1.5.rc1.min.js"></script>
+</head>
+<body>
+    <div id="login_form" style="margin-left: 420px;margin-top: 350px; width: 400px"></div>
+</body>
+<script>
+$(function () {
+    $('#login_form').w2form({ 
+        name:  'login_form',
+        url:   "login_form",
+        msgSaving:"Login...",
+        fields : [
+            { name: 'Account', type: 'text', required: true },
+            { name: 'Password',  type: 'password', required: true },
+        ],
+        actions: {
+            "登录":function () {
+                this.submit({},(tRet)=>{
+                    if(tRet.err){
+                        console.log(tRet.err);
+                    }else{
+                        window.location.href="./main";
+                    }
+                });
+            },
+            "授权": function () {
+                window.location.href="./auth";
+            },
+            "重获7天":function(){
+                window.location.href="./refetch_sevendays"
+            }
+        }
+    });
+});
+
+</script>
+</html>

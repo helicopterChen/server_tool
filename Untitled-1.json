@@ -1,0 +1,86 @@
+{
+	"adctrl": {
+		"frequency": [{
+			"value": "start:3,len:3"
+		}],
+		"close_init": [{}],
+		"close_load": [{}],
+		"close_show": [{}],
+		"close_mutex": [{}],
+		"delay_ctrl": {}
+	},
+	"adopt": {
+		"interstitial": {
+			"max_filled": "2",
+			"adnet": [{
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "DEFAULT19477",
+				"name": "vungle",
+				"score": 13.774617067833697
+			}, {
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "video",
+				"name": "unityads",
+				"score": 10.618389934727084
+			}, {
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "ca-app-pub-5725037281077458/9445201294",
+				"name": "admob",
+				"score": 1.8705035971223023
+			}]
+		},
+		"video": {
+			"max_filled": "2",
+			"adnet": [{
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "rewardedVideo",
+				"name": "unityads",
+				"score": 10.618389934727084
+			}, {
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "J3TJ7IR94230",
+				"name": "vungle",
+				"score": 13.618389934727084
+			}, {
+				"priority": [{
+					"value": "1"
+				}],
+				"max_impressions": [{
+					"value": "1000"
+				}],
+				"placement_id": "ca-app-pub-5725037281077458/3813600669",
+				"name": "admob",
+				"score": 5.701873756934995
+			}]
+		},
+		"banner": {
+			"max_filled": "2",
+			"adnet": []
+		}
+	}
+}
