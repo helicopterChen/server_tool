@@ -18,7 +18,7 @@ let tGooleTokens = null;
 var OAuth2 = google.auth.OAuth2;
 var ClientId = "496601356493-n97c6f4p3g21qvnf01la3i51o0a1dpn5.apps.googleusercontent.com";
 var ClientSecret = "XeVYyb1um5dfP3xmAevMNqrl";
-var RedirectUrl = "http://ttt.cwpro.xyz/oauthCallback";
+var RedirectUrl = "http://ttt.cwpro.xyz:9000/oauthCallback";
 
 const STR_FORMAT = require('string-format');
 let fs = require('fs');

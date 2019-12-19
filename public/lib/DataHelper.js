@@ -10,7 +10,7 @@
     let FB_TOKEN = "EAAcl0ZAnNVHwBAKLteSLhqAdMeBltCJJCxmiFWiVfqnAv7s6CWJzR9IZAjlrz6aNYgYHtabhgmCqOklCtm2WIyoMLQayZCyk5wrZCoDwBFvJE2v8Qau7iLij9fXWGICjSUhKrNBKI2bISVvGXjXG6B2jBXZAXEkPUSicvRWQmmcWWDAoP61fW";
     let FACEBOOK_PATH = "https://graph.facebook.com/v3.2/2011906995737724/adnetworkanalytics/?metrics=['fb_ad_network_imp','fb_ad_network_filled_request','fb_ad_network_cpm','fb_ad_network_request','fb_ad_network_click','fb_ad_network_revenue']&since=2019-03-26&until=2019-03-26&breakdowns=['platform','country','placement']&access_token="+FB_TOKEN;
     let FACEBOOK_RESULT_QUERY = "https://graph.facebook.com/v3.2/2011906995737724/adnetworkanalytics_results/?query_ids=['"
-    let ADMOB_PATH="http://ttt.cwpro.xyz/details";
+    let ADMOB_PATH="http://ttt.cwpro.xyz:9000/details";
 
     function unicode2Chr(str) {
         return unescape(str.replace(/\\/g, "%"))
