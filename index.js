@@ -18,7 +18,7 @@ let tGooleTokens = null;
 var OAuth2 = google.auth.OAuth2;
 var ClientId = "496601356493-n97c6f4p3g21qvnf01la3i51o0a1dpn5.apps.googleusercontent.com";
 var ClientSecret = "XeVYyb1um5dfP3xmAevMNqrl";
-var RedirectUrl = "http://www.cwpro.xyz/oauthCallback";
+var RedirectUrl = "http://ttt.cwpro.xyz/oauthCallback";
 
 const STR_FORMAT = require('string-format');
 let fs = require('fs');
@@ -123,6 +123,7 @@ app.get("/main",async(req,res)=>{
 
 app.get("/auth",async(req,res)=>{
     var session = req.session;
+    session["tokens"]=null;
     if(!session["tokens"]){
         let url = getAuthurl();
         res.send(`<h1>Google Play授权</h1><a href=${url}>点击授权</a>`);
