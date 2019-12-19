@@ -186,7 +186,9 @@ app.get("/query_admob",(req,res)=>{
             useTimezoneReporting:true
         },
         function(err, response){
+            console.log(err);
             if (!err) {
+                console.log("-query_admob-"+tBody.Date);
                 let text = ""
                 let rows = response.data.rows;
                 if(rows){
