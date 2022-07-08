@@ -14,7 +14,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "googleapis": "^39.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "morgan": "^1.9.1",
     "pako": "^1.0.10",
     "request": "^2.88.0",
